@@ -1,0 +1,15 @@
+#startPageButton {
+    background-color: #2045E8;
+    color: #E8C320;
+    font-size: 16px;
+    text-align: center;
+}
+#startPageButton:hover {
+    background-color: #E8C320;
+    color: #2045E8;
+}
+
+#titleText {
+    color : #E8C320;
+    font: 700 36px "Arial";
+}
