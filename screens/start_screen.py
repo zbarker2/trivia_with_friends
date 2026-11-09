@@ -16,6 +16,12 @@ class StartScreen(QWidget):
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setFrameShape(QFrame.Shape.NoFrame)
 
+        #Demo Game button Settings
+        demo_button = QPushButton("Demo Game")
+        demo_button.setObjectName("startPageButton")
+        demo_button.setFixedSize(200, 50)
+        demo_button.clicked.connect(self.start_game)
+
         #Create Game button Settings
         create_button = QPushButton("Create Game")
         create_button.setObjectName("startPageButton")
@@ -39,6 +45,7 @@ class StartScreen(QWidget):
         layout.addWidget(title,stretch=3)
         # layout.addStretch(0)
         layout.setSpacing(8)
+        layout.addWidget(demo_button, alignment=Qt.AlignmentFlag.AlignCenter, stretch=0)
         layout.addWidget(create_button, alignment=Qt.AlignmentFlag.AlignCenter, stretch=0)
         layout.addWidget(load_button, alignment=Qt.AlignmentFlag.AlignCenter, stretch=0)
         layout.addWidget(exit_button, alignment=Qt.AlignmentFlag.AlignCenter, stretch=0)
