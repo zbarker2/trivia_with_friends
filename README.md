@@ -1,1 +1,1 @@
-# jeapordy_with_friends
+# trivia_with_friends
