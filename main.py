@@ -1,7 +1,8 @@
 import sys
-from screens.start_screen import StartScreen
 
 from PyQt6.QtWidgets import QApplication
+
+from screens.start_screen import StartScreen
 
 
 def main():
@@ -13,7 +14,6 @@ def main():
     start_screen = StartScreen()
     start_screen.show()
     sys.exit(app.exec())
-
 
 
 if __name__ == "__main__":
