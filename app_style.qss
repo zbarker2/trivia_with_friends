@@ -1,5 +1,6 @@
 #startPageButton {
     background-color: #2045E8;
+    border-radius: 10px;
     color: #E8C320;
     font-size: 16px;
     text-align: center;

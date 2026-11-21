@@ -1,13 +1,10 @@
 from PyQt6.QtWidgets import QPushButton
 
+
 class QuestionButton(QPushButton):
-    def __init__(self, value, question_text, question_answer, is_active=True):
-        super(QuestionButton, self).__init__()
-        self.value = value
-        self.question_text = question_text
-        self.question_answer = question_answer
+    def __init__(self, question_id, is_active=True):
+        super().__init__()
         self.is_active = is_active
-        self.setText(f"${self.value}")
-    
-            
-    
+        self.setText(f"test${question_id}")
+        self.setObjectName(f"test${question_id}")
+        self.setFixedSize(200, 100)
