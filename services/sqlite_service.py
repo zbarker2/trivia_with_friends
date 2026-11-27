@@ -8,6 +8,8 @@ class SQLiteService:
     def connect(self, db_name):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
+        return self.cursor
+
     def init_db(self):
         SCHEMA = """
         CREATE TABLE questions(
@@ -15,7 +17,7 @@ class SQLiteService:
             value NUMBER NOT NULL,
             answer TEXT NOT NULL,
             question TEXT NOT NULL,
-
+            positionData TEXT NOT NULL
         )
         CREATE TABLE teams(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
