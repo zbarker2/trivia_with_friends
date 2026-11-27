@@ -8,6 +8,7 @@ class SQLiteService:
     def connect(self, db_name):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
+        self.cursor.row_factory = sqlite3.Row
         return self.cursor
 
     def init_db(self):
